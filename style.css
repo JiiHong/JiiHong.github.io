@@ -149,3 +149,25 @@ button {
   border-radius: 0.25rem;
   background-color: var(--color-accent);
 }
+
+@media screen and (max-width: 768px) {
+  :root {
+    /* Size */
+    --size-max-width: 480px;
+    --size-padding-profile: 3rem;
+    --size-text-sm: 1rem;
+    --size-text-base: 1.3rem;
+    --size-text-xl: 3rem;
+    --size-avatar: 13rem;
+  }
+
+  .profile {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
