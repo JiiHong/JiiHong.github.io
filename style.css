@@ -1,0 +1,54 @@
+:root {
+  /* Colors */
+  --color-white: #fcfbfc;
+  --color-blue: #283a71;
+  --color-sky: #1b2138;
+  --color-gray: #cccccc;
+
+  /* App Colors */
+  --color-accent: var(--color-blue);
+  --color-text: var(--color-gray);
+
+  /* Background */
+  --color-bg: #070a19;
+
+  /* Size */
+  --size-max-width: 1200px;
+  --size-padding-profile: 5rem;
+  --size-text-sm: 1.2rem;
+  --size-text-base: 1.5rem;
+  --size-text-lg: 2rem;
+  --size-text-xl: 4rem;
+  --size-avatar: 15rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+p,
+span {
+  color: var(--color-text);
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
