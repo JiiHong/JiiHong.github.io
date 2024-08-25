@@ -14,7 +14,7 @@
 
   /* Size */
   --size-max-width: 1200px;
-  --size-padding-profile: 5rem;
+  --size-padding-profile: 4rem;
   --size-text-sm: 1.2rem;
   --size-text-base: 1.5rem;
   --size-text-lg: 2rem;
@@ -27,8 +27,11 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   margin: 0;
+  text-align: center;
 }
 
 p,
@@ -51,4 +54,42 @@ button {
   outline: none;
   cursor: pointer;
   background-color: transparent;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: var(--size-padding-profile) 0;
+  background: var(--color-bg);
+}
+
+.profile__avatar {
+  width: var(--size-avatar);
+  height: var(--size-avatar);
+  border-radius: 100%;
+  background-color: #f5f5f5;
+}
+
+.profile__description > p:nth-child(1) {
+  font-size: var(--size-text-xl);
+  color: var(--color-white);
+}
+
+.profile__description > p:nth-child(2) {
+  font-size: var(--size-text-base);
+}
+
+.profile__icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.profile__icon {
+  font-size: var(--size-text-base);
+  color: var(--color-white);
 }
